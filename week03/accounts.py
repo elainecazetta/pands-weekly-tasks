@@ -9,7 +9,8 @@
 # (yes that is a vague requirement, comment your assumptions)
 #
 # Author Elaine Cazetta
-# Source: https://www.w3schools.com/python/python_strings_slicing.asp and ChatGPT (function 'len')
+# Source: https://www.w3schools.com/python/python_strings_slicing.asp and 
+# ChatGPT (functions 'len' and slicer)
 #
 # Answer:
 #
