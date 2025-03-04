@@ -1,16 +1,16 @@
-# This program outputs whether or not today is a weekday
+# This program outputs whether or not today is a weekday.
 #
 # Author: Elaine Cazetta
-# Source: W3Schools , ChatGPT
 #
-# Import the datetime module to work with dates
-from datetime import datetime
+# Sources: https://www.w3schools.com/python/python_datetime.asp ; chatgpt
 
-# Get the current day of the week
-today = datetime.today().weekday()
+import datetime # Imports the datetime module
 
-# Check if it's a weekday or weekend
-if today < 5:  # 0-4 are Monday to Friday
+today = datetime.datetime.today() # this bit assigns the current timestamp as 'today'
+weekday = today.strftime("%A") # the 'strftime' formats date objects into strings, and "%A" transforms today's date into a weekday
+weekend = ("Saturday", "Sunday") # I used a tupple to assign Saturday and Sunday as weekend
+
+if weekday not in weekend: # I learned the 'not in' function from chatgpt. I was wrongly using "if weekday != weekend:" instead
     print("Yes, unfortunately today is a weekday.")
-else:          # 5 and 6 are Saturday and Sunday
+else:
     print("It is the weekend, yay!")
